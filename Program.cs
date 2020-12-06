@@ -15,7 +15,7 @@ namespace aoc6
             int totalCount=0;
             bool newgroup=true;
             var removequestions = new List<char>();
-            foreach (string line in File.ReadLines(@"C:\Repos\aoc6\input\example.txt"))
+            foreach (string line in File.ReadLines(@"C:\Repos\aoc6\input\answers.txt"))
             {
                 Console.WriteLine(line);
                 if (line == string.Empty)  // group is ingelezen let op je moet twee lege enters na laatste groep in inputfile hebben
@@ -57,6 +57,7 @@ namespace aoc6
             }
             Console.WriteLine($"sum of counts: {totalCount}");
             // goede antwoord: 6457 (deel 1, anyone yes)
+            // deel twee: 3260
         }
     }
 }
